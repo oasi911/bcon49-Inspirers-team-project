@@ -2,21 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Flower Studio</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <header>
+      <load src="./partials/header.html" />
+    </header>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <main>
+      <load src="./partials/hero.html" />
+      <load src="./partials/about.html" />
+      <load src="./partials/store.html" />
+      <load src="./partials/delivery.html" />
+      <load src="./partials/blog.html" />
+    </main>
 
-    <script type="module" src="/main.js"></script>
+    <footer>
+      <load src="./partials/footer.html" />
+    </footer>
+
+    <load src="./partials/mobile-menu.html" />
+    <load src="./partials/modal-contact-us.html" />
+    <load src="./partials/modal-received.html" />
+    <load src="./partials/modal-subscribe.html" />
   </body>
 </html>
