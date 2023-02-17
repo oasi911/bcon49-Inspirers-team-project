@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff) format("woff") font-weight-400, url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Montserrat-SemiBold.woff) format("woff") font-weight-600, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
+}
 body {
   background-color: #ffffff;
   color: #000000;
@@ -21,8 +29,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-p {
+h4 p {
   margin: 0;
   font-size: inherit;
 }
@@ -55,17 +62,19 @@ button {
 .container {
   min-width: 320px;
   max-width: 480px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 24px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    padding: 0 24px;
   }
 }
 
@@ -79,17 +88,44 @@ button {
     padding-bottom: 100px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1280) {
   .section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  
-@font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
 }
-@font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Regular.woff) format("woff") font-weight-400, url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Montserrat-SemiBold.woff) format("woff") font-weight-600, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
+
+.delivery__title {
+  font-size: 44px;
+  line-height: 1.2272727273;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 767) {
+  .delivery__title {
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.delivery-box__list {
+  list-style-type: decimal;
+}
+.delivery-box__item {
+  font-size: 14px;
+  line-height: 1.2142857143;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 768) {
+  .delivery-box__item {
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+@media screen and (min-width: 1280) {
+  .delivery-box__item {
+    font-size: 32px;
+    line-height: 1.21875;
+  }
 }/*# sourceMappingURL=main.css.map */
