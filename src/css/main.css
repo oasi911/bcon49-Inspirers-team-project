@@ -81,6 +81,7 @@ button {
 }
 
 .nav_list__item {
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -191,9 +192,16 @@ button {
 }
 
 .mobile-menu {
-  margin-top: 50%;
+  margin-top: 40%;
   text-align: center;
 }
 .mobile-menu__item {
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 26px;
 }/*# sourceMappingURL=main.css.map */
