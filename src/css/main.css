@@ -1,3 +1,8 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -45,5 +50,22 @@ button {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }/*# sourceMappingURL=main.css.map */
