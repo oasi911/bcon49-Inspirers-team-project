@@ -100,6 +100,7 @@ button {
   line-height: 1.2272727273;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 767) {
   .delivery__title {
@@ -108,24 +109,38 @@ button {
   }
 }
 
-.delivery-box__list {
-  list-style-type: decimal;
+.delivery-box {
+  margin-bottom: 60px;
 }
 .delivery-box__item {
-  font-size: 14px;
-  line-height: 1.2142857143;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  line-height: 1.21875;
   font-family: "Montserrat", sans-serif;
+}
+.delivery-box__item:not(:last-child) {
+  margin-bottom: 32px;
   font-weight: 500;
 }
 @media screen and (min-width: 768) {
-  .delivery-box__item {
+  .delivery-box__item:not(:last-child) {
     font-size: 24px;
     line-height: 1.2083333333;
   }
 }
-@media screen and (min-width: 1280) {
-  .delivery-box__item {
-    font-size: 32px;
-    line-height: 1.21875;
-  }
+.delivery-box__numbers {
+  height: 64px;
+  width: 64px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 56px;
+}
+
+.delivery-box__nmb {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2307692308;
 }/*# sourceMappingURL=main.css.map */
