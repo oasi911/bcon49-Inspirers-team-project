@@ -1,7 +1,28 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
-h4 p {
+h4,
+p {
   margin: 0;
   font-size: inherit;
 }
@@ -46,4 +67,29 @@ button {
   .container {
     max-width: 1280px;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff) format("woff") font-weight-400, url(../fonts/Inter-Medium.woff) format("woff") font-weight-500, url(../fonts/Montserrat-SemiBold.woff) format("woff") font-weight-600, url(../fonts/Inter-Bold.woff) format("woff") font-weight-700;
 }/*# sourceMappingURL=main.css.map */
