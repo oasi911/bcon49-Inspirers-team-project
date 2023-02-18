@@ -1,7 +1,16 @@
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+
+  // !tablet screen
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+
+  // !desktop screen
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+  }
 }
 
 .logo__icon {
@@ -49,8 +58,17 @@
 }
 
 .header__phone {
-  min-height: 40px;
-  min-width: 40px;
+  cursor: pointer;
+}
+
+.header__btns {
+  display: flex;
+  padding-top: 0;
+}
+.blb {
+  margin-right: 14px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .header__phone-icon {
@@ -70,8 +88,6 @@
 }
 
 .header__menu-btn {
-  min-height: 40px;
-  min-width: 40px;
   background-color: transparent;
   cursor: pointer;
   border: none;

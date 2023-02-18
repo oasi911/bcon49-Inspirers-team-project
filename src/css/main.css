@@ -50,8 +50,17 @@ button {
 
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    align-items: center;
+  }
 }
 
 .logo__icon {
@@ -97,8 +106,18 @@ button {
   }
 }
 .header__phone {
-  min-height: 40px;
-  min-width: 40px;
+  cursor: pointer;
+}
+
+.header__btns {
+  display: flex;
+  padding-top: 0;
+}
+
+.blb {
+  margin-right: 14px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .header__phone-icon {
@@ -119,8 +138,6 @@ button {
 }
 
 .header__menu-btn {
-  min-height: 40px;
-  min-width: 40px;
   background-color: transparent;
   cursor: pointer;
   border: none;
