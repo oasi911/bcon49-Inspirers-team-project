@@ -1,0 +1,140 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-size: inherit;
+}
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 24px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.delivery__title {
+  font-size: 44px;
+  line-height: 1.2272727273;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 767) {
+  .delivery__title {
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+
+.delivery-box {
+  margin-bottom: 60px;
+}
+.delivery-box__item {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  line-height: 1.21875;
+  font-family: "Montserrat", sans-serif;
+}
+.delivery-box__item:not(:last-child) {
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768) {
+  .delivery-box__item:not(:last-child) {
+    font-size: 24px;
+    line-height: 1.2083333333;
+  }
+}
+.delivery-box__numbers {
+  height: 64px;
+  width: 64px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 56px;
+}
+
+.delivery-box__nmb {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2307692308;
+}/*# sourceMappingURL=main.css.map */
