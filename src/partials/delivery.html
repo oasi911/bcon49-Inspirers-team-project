@@ -39,8 +39,16 @@
     </div>
 
     <img
-      srcset="../images/delivery/desktop/desktop__delivery-img@1x.jpg 1x ../images/delivery/desktop/desktop__delivery-img@2x.jpg 2x"
-      src="../images/delivery/desktop/desktop__delivery-img@1x.jpg"
+      src="..\images\delivery\desktop\desktop__delivery-img@1x.jpg"
+      srcset="
+        ..\images\delivery\desktop\desktop__delivery-img@1x.jpg 1280w,
+        ..\images\delivery\desktop\desktop__delivery-img@2x.jpg 2560w,
+        ..\images\delivery\tablet\desktop__delivery-img@1x.jpg   768w,
+        ..\images\delivery\tablet\desktop__delivery-img@2x.jpg  1536w,
+        ..\images\delivery\mobile\desktop__delivery-img@1x.jpg   320w,
+        ..\images\delivery\mobile\desktop__delivery-img@2x.jpg   640w
+      "
+      sizes="(min-width: 1200px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px, 100vw"
       alt="flowers for delivery"
       width="1280"
       height="391"
