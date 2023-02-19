@@ -15,7 +15,21 @@
     margin-top: 28px;
   }
 }
+.logo {
+  width: 45px;
+  height: 35px;
+  // !tablet screen
+  @media screen and (min-width: 768px) {
+    width: 72px;
+    height: 57px;
+  }
 
+  // !desktop screen
+  @media screen and (min-width: 1280px) {
+    width: 72px;
+    height: 57px;
+  }
+}
 .logo__icon {
   width: 45px;
   height: 35px;

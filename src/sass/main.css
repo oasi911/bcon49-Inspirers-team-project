@@ -107,6 +107,23 @@ button {
   }
 }
 
+.logo {
+  width: 45px;
+  height: 35px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 72px;
+    height: 57px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo {
+    width: 72px;
+    height: 57px;
+  }
+}
+
 .logo__icon {
   width: 45px;
   height: 35px;
