@@ -15,14 +15,56 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-66886f7c.css">
+    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-7e8ee180.css">
   </head>
   <body>
     <header>
       
     </header>
     <main>
-      
+      <section class="hero">
+  <div class="container">
+    <h1 class="hero__title">Anemone</h1>
+    <h2 class="hero__subtitle">Flower studio</h2>
+    <picture class="hero__image">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ../images/hero/desktop/desktop__hero-bg@1x.png 1x,
+          ../images/hero/desktop/desktop__hero-bg@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../images/hero/tablet/tablet__hero-img@1x.png 1x,
+          ../images/hero/tablet/tablet__hero-img@2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ../images/hero/mobile/mobile__hero-img@1x.png 1x,
+          ../images/hero/mobile/mobile__hero-img@2x.png 2x
+        "
+      />
+      <img
+        class="hero__img"
+        src="../images/hero/mobile/mobile__hero-img@1x.png"
+        alt="anemone flower"
+      />
+    </picture>
+    <button class="hero__btn">
+      <svg class="hero__icon-border">
+        <use href="../images/symbol-defs.svg#btn-border"></use>
+      </svg>
+      <svg class='hero__icon-arrow'>
+      <use href='../images/symbol-defs.svg#btn-arrow'></use>
+      </svg> 
+    </button>
+  </div>
+</section>
+
       
       
       
