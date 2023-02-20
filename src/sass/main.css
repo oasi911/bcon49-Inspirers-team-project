@@ -90,51 +90,110 @@ button {
 }
 
 .delivery__title {
-  font-size: 44px;
-  line-height: 1.2272727273;
+  font-size: 24px;
+  line-height: 1.2083333333;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  margin-bottom: 80px;
+  margin-bottom: 32px;
 }
-@media screen and (max-width: 767) {
+@media screen and (min-width: 768) {
   .delivery__title {
-    font-size: 24px;
-    line-height: 1.2083333333;
+    font-size: 44px;
+    line-height: 1.2272727273;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280) {
+  .delivery__title {
+    margin-bottom: 80px;
+    font-size: 44px;
+    line-height: 1.2272727273;
   }
 }
 
 .delivery-box {
-  margin-bottom: 60px;
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 768) {
+  .delivery-box {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280) {
+  .delivery-box {
+    margin-bottom: 60px;
+    margin-left: 72px;
+  }
 }
 .delivery-box__item {
   display: flex;
   align-items: center;
-  font-size: 32px;
-  line-height: 1.21875;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
   font-family: "Montserrat", sans-serif;
 }
 .delivery-box__item:not(:last-child) {
-  margin-bottom: 32px;
-  font-weight: 500;
+  margin-bottom: 14px;
 }
 @media screen and (min-width: 768) {
-  .delivery-box__item:not(:last-child) {
+  .delivery-box__item {
     font-size: 24px;
     line-height: 1.2083333333;
   }
+  .delivery-box__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
-.delivery-box__numbers {
-  height: 64px;
-  width: 64px;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  margin-right: 56px;
+@media screen and (min-width: 1280) {
+  .delivery-box__item {
+    font-size: 32px;
+    line-height: 1.21875;
+  }
+  .delivery-box__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-.delivery-box__nmb {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
+.circle-box {
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  margin-right: 8px;
+}
+@media screen and (min-width: 768) {
+  .circle-box {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1280) {
+  .circle-box {
+    width: 64px;
+    height: 64px;
+    margin-right: 56px;
+  }
+}
+
+.circle {
   font-weight: 500;
-  font-size: 26px;
-  line-height: 1.2307692308;
+  font-size: 20px;
+  line-height: 1.2;
+  padding: 8px 12px;
+}
+@media screen and (min-width: 768) {
+  .circle {
+    padding: 16px 24px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1280) {
+  .circle {
+    font-size: 26px;
+    padding: 16px 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -7,26 +7,39 @@
   }
 
   &__title {
-    font-size: 44px;
-    line-height: calc(54 / 44);
+    font-size: 24px;
+    line-height: calc(29 / 24);
+
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 32px;
 
-    @media screen and (max-width: 767) {
-      font-size: 24px;
-      line-height: calc(29 / 24);
+    @media screen and (min-width: 768) {
+      font-size: 44px;
+      line-height: calc(54 / 44);
+      margin-bottom: 60px;
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1280) {
+      margin-bottom: 80px;
+      font-size: 44px;
+      line-height: calc(54 / 44);
     }
   }
 }
 
 .delivery-box {
-  margin-bottom: 60px;
+  margin-bottom: 26px;
+
   @media screen and (min-width: 768) {
+    margin-bottom: 40px;
   }
 
   //desctop screen (>1200px)
   @media screen and (min-width: 1280) {
+    margin-bottom: 60px;
+    margin-left: 72px;
   }
   &__list {
     @media screen and (min-width: 768) {
@@ -40,40 +53,73 @@
   &__item {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
 
     //font-size: 14px;
     // line-height: calc(17 / 14);
-    font-size: 32px;
-    line-height: calc(39 / 32);
+
     font-family: 'Montserrat', sans-serif;
-
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 14px;
+    }
 
-      @media screen and (min-width: 768) {
-        font-size: 24px;
-        line-height: calc(29 / 24);
+    @media screen and (min-width: 768) {
+      font-size: 24px;
+      line-height: calc(29 / 24);
+      &:not(:last-child) {
+        margin-bottom: 20px;
       }
+    }
 
-      //desctop screen (>1200px)
-      @media screen and (min-width: 1280) {
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1280) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
+      &:not(:last-child) {
+        margin-bottom: 32px;
       }
-      font-weight: 500;
     }
   }
 }
 
-.delivery-box__numbers {
-  height: 64px;
-  width: 64px;
-  border: 1px solid #000000;
+.circle-box {
+  text-align: center;
+  position: relative;
   border-radius: 50%;
-  margin-right: 56px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $black;
+  margin-right: 8px;
+
+  @media screen and (min-width: 768) {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1280) {
+    width: 64px;
+    height: 64px;
+    margin-right: 56px;
+  }
 }
-.delivery-box__nmb {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+.circle {
   font-weight: 500;
-  font-size: 26px;
-  line-height: calc(32 / 26);
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  padding: 8px 12px;
+
+  @media screen and (min-width: 768) {
+    padding: 16px 24px;
+    font-size: 26px;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1280) {
+    font-size: 26px;
+    padding: 16px 24px;
+  }
 }
