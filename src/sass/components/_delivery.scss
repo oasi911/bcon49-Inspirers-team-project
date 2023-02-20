@@ -1,12 +1,16 @@
 .delivery {
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
   }
 
   //desctop screen (>1200px)
-  @media screen and (min-width: 1280) {
+  @media screen and (min-width: 1280px) {
   }
 
   &__title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
     font-size: 24px;
     line-height: calc(29 / 24);
 
@@ -14,14 +18,22 @@
     text-transform: uppercase;
     margin-bottom: 32px;
 
-    @media screen and (min-width: 768) {
+    &::after {
+      border: 1px solid $black;
+      content: '';
+      height: 1px;
+      width: auto;
+      flex-grow: 1;
+    }
+
+    @media screen and (min-width: 768px) {
       font-size: 44px;
       line-height: calc(54 / 44);
       margin-bottom: 60px;
     }
 
     //desctop screen (>1200px)
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
       margin-bottom: 80px;
       font-size: 44px;
       line-height: calc(54 / 44);
@@ -32,21 +44,21 @@
 .delivery-box {
   margin-bottom: 26px;
 
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
 
   //desctop screen (>1200px)
-  @media screen and (min-width: 1280) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
     margin-left: 72px;
   }
   &__list {
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
     }
 
     //desctop screen (>1200px)
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
     }
     //list-style-type: decimal;
   }
@@ -65,7 +77,7 @@
       margin-bottom: 14px;
     }
 
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
       font-size: 24px;
       line-height: calc(29 / 24);
       &:not(:last-child) {
@@ -74,7 +86,7 @@
     }
 
     //desctop screen (>1200px)
-    @media screen and (min-width: 1280) {
+    @media screen and (min-width: 1280px) {
       font-size: 32px;
       line-height: calc(39 / 32);
       &:not(:last-child) {
@@ -85,22 +97,30 @@
 }
 
 .circle-box {
+  display: flex;
   text-align: center;
-  position: relative;
+  justify-content: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   border: 1px solid $black;
   margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  flex-shrink: 0;
 
-  @media screen and (min-width: 768) {
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
     width: 64px;
     height: 64px;
     margin-right: 20px;
   }
 
   //desctop screen (>1200px)
-  @media screen and (min-width: 1280) {
+  @media screen and (min-width: 1280px) {
     width: 64px;
     height: 64px;
     margin-right: 56px;
@@ -112,14 +132,35 @@
   line-height: calc(24 / 20);
   padding: 8px 12px;
 
-  @media screen and (min-width: 768) {
-    padding: 16px 24px;
+  @media screen and (min-width: 768px) {
+    padding: 16px 26px;
     font-size: 26px;
   }
 
   //desctop screen (>1200px)
-  @media screen and (min-width: 1280) {
+  @media screen and (min-width: 1280px) {
     font-size: 26px;
     padding: 16px 24px;
   }
+}
+
+.circle-text {
+  width: 12px;
+  height: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 15px;
+    height: 32px;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1280px) {
+    width: 15px;
+    height: 32px;
+  }
+}
+
+.delivery-box__item:hover .circle-box,
+.delivery-box__item:focus .circle-box {
+  border-color: $button-color-default;
 }

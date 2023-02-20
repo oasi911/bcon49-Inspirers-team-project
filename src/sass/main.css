@@ -90,20 +90,30 @@ button {
 }
 
 .delivery__title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-size: 24px;
   line-height: 1.2083333333;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 768) {
+.delivery__title::after {
+  border: 1px solid #000000;
+  content: "";
+  height: 1px;
+  width: auto;
+  flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
   .delivery__title {
     font-size: 44px;
     line-height: 1.2272727273;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .delivery__title {
     margin-bottom: 80px;
     font-size: 44px;
@@ -114,12 +124,12 @@ button {
 .delivery-box {
   margin-bottom: 26px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .delivery-box {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .delivery-box {
     margin-bottom: 60px;
     margin-left: 72px;
@@ -136,7 +146,7 @@ button {
 .delivery-box__item:not(:last-child) {
   margin-bottom: 14px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .delivery-box__item {
     font-size: 24px;
     line-height: 1.2083333333;
@@ -145,7 +155,7 @@ button {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .delivery-box__item {
     font-size: 32px;
     line-height: 1.21875;
@@ -156,22 +166,29 @@ button {
 }
 
 .circle-box {
+  display: flex;
   text-align: center;
-  position: relative;
+  justify-content: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   border: 1px solid #000000;
   margin-right: 8px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .circle-box {
     width: 64px;
     height: 64px;
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .circle-box {
     width: 64px;
     height: 64px;
@@ -185,15 +202,37 @@ button {
   line-height: 1.2;
   padding: 8px 12px;
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .circle {
-    padding: 16px 24px;
+    padding: 16px 26px;
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1280) {
+@media screen and (min-width: 1280px) {
   .circle {
     font-size: 26px;
     padding: 16px 24px;
   }
+}
+
+.circle-text {
+  width: 12px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .circle-text {
+    width: 15px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .circle-text {
+    width: 15px;
+    height: 32px;
+  }
+}
+
+.delivery-box__item:hover .circle-box,
+.delivery-box__item:focus .circle-box {
+  border-color: #e86f54;
 }/*# sourceMappingURL=main.css.map */
