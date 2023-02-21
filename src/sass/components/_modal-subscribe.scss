@@ -1,0 +1,167 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__subscribe {
+  position: relative;
+  width: 272px;
+  height: 380px;
+  background-color: $white;
+  @media screen and (min-width: 480px) {
+    width: 588px;
+    height: 644px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 860px;
+    height: 100%;
+  }
+}
+.modal__subscribe__btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.modal__subscribe__close {
+  stroke: $black;
+  height: 18px;
+  width: 18px;
+  @media screen and (min-width: 768px) {
+    height: 24px;
+    width: 24px;
+  }
+}
+.modal__subscribe__form {
+  width: 272px;
+  height: 259px;
+  padding-top: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    width: 588px;
+    height: 373px;
+    padding-top: 28px;
+    padding-left: 118px;
+    padding-right: 118px;
+    padding-bottom: 40px;
+  }
+
+  // !desktop screen
+  @media screen and (min-width: 1280px) {
+    width: 432px;
+    height: 528px;
+    padding: 111px 40px;
+  }
+}
+.modal__subscribe__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__subscribe__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: calc(23 / 19);
+  text-align: center;
+  color: $black;
+  margin-bottom: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    margin-bottom: 24px;
+  }
+}
+.modal__subscribe__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  margin-bottom: 18px;
+  margin-top: 0;
+  text-align: center;
+  color: $form-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+.modal__subscribe__label {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  color: $form-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+.modal__subscribe__input {
+  width: 236px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #d7d7d7;
+  outline: transparent;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  &:focus {
+    border: 1px solid $button-color-focus;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 49px;
+    padding: 16px 12px;
+    margin-bottom: 28px;
+  }
+}
+.modal__subscribe__button {
+  width: 236px;
+  min-height: 37px;
+  background: $button-color-default;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: center;
+  color: $white;
+  &:hover {
+    background-color: $button-color-hover;
+  }
+  &:focus {
+    background-color: $button-color-focus;
+    box-shadow: $button-color-focus-box-shadow;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 50px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}

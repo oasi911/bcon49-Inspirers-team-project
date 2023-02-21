@@ -1,0 +1,81 @@
+<section class="blog">
+  <div class="container">
+    <h2 class="blog__title">BLOG</h2>
+    <!-- Slider main container -->
+    <div class="blog__wrapper">
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="
+                ./images/blog/additional/desktop/desktop__flowers-1@1x.jpg 390w,
+                ./images/blog/additional/tablet/tablet__flowers-1@1x.jpg   344w,
+                ./images/blog/additional/mobile/mobile__flowers-1@1x.jpg   153w,
+                ./images/blog/additional/desktop/desktop__flowers-1@2x.jpg 780w,
+                ./images/blog/additional/tablet/tablet__flowers-1@2x.jpg   688w,
+                ./images/blog/additional/mobile/mobile__flowers-1@2x.jpg   306w
+              "
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="./images/blog/additional/mobile/mobile__flowers-1@1x.jpg"
+              alt="white flowers"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="
+                ./images/blog/additional/desktop/desktop__flowers-2@1x.jpg 390w,
+                ./images/blog/additional/tablet/tablet__flowers-2@1x.jpg   344w,
+                ./images/blog/additional/mobile/mobile__flowers-2@1x.jpg   153w,
+                ./images/blog/additional/desktop/desktop__flowers-2@2x.jpg 780w,
+                ./images/blog/additional/tablet/tablet__flowers-2@2x.jpg   688w,
+                ./images/blog/additional/mobile/mobile__flowers-2@2x.jpg   306w
+              "
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="./images/blog/additional/mobile/mobile__flowers-1@1x.jpg"
+              alt="different flowers"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="
+                ./images/blog/additional/desktop/desktop__flowers-3@1x.jpg 390w,
+                ./images/blog/additional/tablet/tablet__flowers-3@1x.jpg   344w,
+                ./images/blog/additional/mobile/mobile__flowers-3@1x.jpg   153w,
+                ./images/blog/additional/desktop/desktop__flowers-3@2x.jpg 780w,
+                ./images/blog/additional/tablet/tablet__flowers-3@2x.jpg   688w,
+                ./images/blog/additional/mobile/mobile__flowers-3@2x.jpg   306w
+              "
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="./images/blog/additional/mobile/mobile__flowers-1@1x.jpg"
+              alt="orange flowers"
+            />
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <button class="swiper-button-prev" type="button">
+          <svg class="swiper-button-left">
+            <use href="./images/symbol-defs.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <svg class="swiper-button-right">
+            <use href="./images/symbol-defs.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <p class="blog__text"><strong>Follow to our newsletter</strong></p>
+    <button type="submit" class="blog__button" data-modal-open>
+      Subscribe
+    </button>
+  </div>
+</section>
