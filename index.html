@@ -14,8 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
+    <!-- My draft -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     
-    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-1dce2a74.css">
+    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-7d32d49d.css">
   </head>
   <body>
     <header>
@@ -306,7 +313,67 @@
   </div>
 </section>
 
-      
+      <section class="blog">
+  <div class="container">
+    <h2 class="blog__title">BLOG</h2>
+    <!-- Slider main container -->
+    <div class="blog__wrapper">
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="/bcon49-Inspirers-team-project/assets/desktop__flowers-1@1x-d3bcc527.jpg 390w, /bcon49-Inspirers-team-project/assets/tablet__flowers-1@1x-c194362d.jpg 344w, /bcon49-Inspirers-team-project/assets/mobile__flowers-1@1x-5400195a.jpg 153w, /bcon49-Inspirers-team-project/assets/desktop__flowers-1@2x-65e32fc4.jpg 780w, /bcon49-Inspirers-team-project/assets/tablet__flowers-1@2x-91a7d730.jpg 688w, /bcon49-Inspirers-team-project/assets/mobile__flowers-1@2x-775c5425.jpg 306w"
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="/bcon49-Inspirers-team-project/assets/mobile__flowers-1@1x-5400195a.jpg"
+              alt="white flowers"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="/bcon49-Inspirers-team-project/assets/desktop__flowers-2@1x-581aff4b.jpg 390w, /bcon49-Inspirers-team-project/assets/tablet__flowers-2@1x-87f8698a.jpg 344w, /bcon49-Inspirers-team-project/assets/mobile__flowers-2@1x-409040ae.jpg 153w, /bcon49-Inspirers-team-project/assets/desktop__flowers-2@2x-e00d7105.jpg 780w, /bcon49-Inspirers-team-project/assets/tablet__flowers-2@2x-e9da7882.jpg 688w, /bcon49-Inspirers-team-project/assets/mobile__flowers-2@2x-d6c866ea.jpg 306w"
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="/bcon49-Inspirers-team-project/assets/mobile__flowers-1@1x-5400195a.jpg"
+              alt="different flowers"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="swiper-image"
+              srcset="/bcon49-Inspirers-team-project/assets/desktop__flowers-3@1x-aa58de80.jpg 390w, /bcon49-Inspirers-team-project/assets/tablet__flowers-3@1x-15ca4975.jpg 344w, /bcon49-Inspirers-team-project/assets/mobile__flowers-3@1x-d169cf54.jpg 153w, /bcon49-Inspirers-team-project/assets/desktop__flowers-3@2x-f7505529.jpg 780w, /bcon49-Inspirers-team-project/assets/tablet__flowers-3@2x-2af2ed93.jpg 688w, /bcon49-Inspirers-team-project/assets/mobile__flowers-3@2x-19055502.jpg 306w"
+              sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (max-width: 767px) 153px,
+              100vw"
+              src="/bcon49-Inspirers-team-project/assets/mobile__flowers-1@1x-5400195a.jpg"
+              alt="orange flowers"
+            />
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <button class="swiper-button-prev" type="button">
+          <svg class="swiper-button-left">
+            <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-07147696.svg#arrow-left"></use>
+          </svg>
+        </button>
+        <button class="swiper-button-next" type="button">
+          <svg class="swiper-button-right">
+            <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-07147696.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <p class="blog__text"><strong>Follow to our newsletter</strong></p>
+    <button type="submit" class="blog__button" data-modal-open>
+      Subscribe
+    </button>
+  </div>
+</section>
+
     </main>
 
     <footer>
@@ -359,6 +426,62 @@
 
     
     
-    
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal__subscribe">
+    <div class="modal__subscribe__btn" data-modal-close>
+      <svg class="modal__subscribe__close">
+        <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-07147696.svg#close"></use>
+      </svg>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../images/modal-subscribe/desktop/desktop__subscribe-img@1x.jpg 1x,
+          ../images/modal-subscribe/desktop/desktop__subscribe-img@2x.jpg 2x
+        "
+        type="image/jpg" />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../images/modal-subscribe/tablet/tablet__subscribe-img@1x.jpg 1x,
+          ../images/modal-subscribe/tablet/tablet__subscribe-img@2x.jpg 2x
+        "
+        type="image/jpg" />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../images/modal-subscribe/mobile/mobile__subscribe-img@1x.jpg 1x,
+          ../images/modal-subscribe/mobile/mobile__subscribe-img@2x.jpg 2x
+        "
+        type="image/jpg" />
+      <img
+        src="../images/modal-subscribe/desktop/desktop__subscribe-img@1x.jpg"
+        alt="flowers"
+        loading="lazy"
+    /></picture>
+    <div class="modal__subscribe__form">
+      <strong class="modal__subscribe__title">Follow to our newsletter</strong>
+      <p class="modal__subscribe__text">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <label class="modal__subscribe__label"
+        >Email<input
+          type="email"
+          placeholder="Your email"
+          class="modal__subscribe__input"
+      /></label>
+      <button type="submit" class="modal__subscribe__button">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="./js/modal-subscribe.js"></script>
+
+    <!-- my draft -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
