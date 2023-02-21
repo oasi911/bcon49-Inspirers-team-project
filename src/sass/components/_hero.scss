@@ -1,16 +1,16 @@
 .hero {
   // !phone screen
-  padding-top: 44px;
+  // padding-top: 44px;
 
-  // !tablet screen
-  @media screen and (min-width: 768px) {
-    padding-top: 38px;
-  }
+  // // !tablet screen
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 38px;
+  // }
 
-  // !desktop screen
-  @media screen and (min-width: 1280px) {
-    padding-top: 68px;
-  }
+  // // !desktop screen
+  // @media screen and (min-width: 1280px) {
+  //   padding-top: 68px;
+  // }
 }
 
 .hero > .container {
@@ -98,7 +98,7 @@
   }
 }
 
-.container > picture {
+.hero__image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,6 +131,15 @@
     width: 166px;
     height: 166px;
     transform: translate(-82%, -50%);
+
+    &:hover > .hero__icon-border,
+    &:focus > .hero__icon-border {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    &:hover > .hero__icon-arrow,
+    &:focus > .hero__icon-arrow {
+      transform: translate(-50%, -50%) rotate(127deg);
+    }
   }
 
   .hero__icon-border {
@@ -153,6 +162,7 @@
     @media screen and (min-width: 1280px) {
       width: 166px;
       height: 166px;
+      transition: transform 600ms linear;
     }
   }
 
@@ -175,6 +185,7 @@
     @media screen and (min-width: 1280px) {
       width: 58px;
       height: 99px;
+      transition: transform 550ms linear;
     }
   }
 }
