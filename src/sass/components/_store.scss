@@ -111,3 +111,22 @@
   background: $button-color-focus;
   box-shadow: $button-color-focus-box-shadow;
 }
+
+.store__title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  &::after {
+    content: '';
+    flex-grow: 1;
+    border: $line;
+  }
+}
+
+.store__item {
+  width: calc((100% - 16px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+  }
+}
