@@ -92,7 +92,7 @@ button {
 .header__container {
   display: flex;
   justify-content: space-between;
-  margin-top: 9px;
+  margin-top: 16px;
 }
 @media screen and (min-width: 768px) {
   .header__container {
@@ -173,6 +173,16 @@ button {
   margin-right: 14px;
   text-align: center;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .btns__phone-box {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btns__phone-box {
+    margin-right: 0px;
+  }
 }
 .btns__phone {
   display: flex;

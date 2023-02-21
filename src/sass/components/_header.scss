@@ -2,7 +2,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin-top: 9px;
+    margin-top: 16px;
 
     // !tablet screen
     @media screen and (min-width: 768px) {
@@ -86,8 +86,15 @@
     margin-right: 14px;
     text-align: center;
     display: flex;
-  }
 
+    @media screen and (min-width: 768px) {
+      margin-right: 0px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 0px;
+    }
+  }
   &__phone {
     display: flex;
     cursor: pointer;
