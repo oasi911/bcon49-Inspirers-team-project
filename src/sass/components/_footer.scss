@@ -140,6 +140,11 @@
   margin-bottom: 12px;
 }
 
+.address__link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .address__link:hover,
 .address__link:focus {
   color: $button-color-focus;
@@ -150,6 +155,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   stroke: $main-background-color;
+}
+.footer-socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .footer-socials__link {
   display: block;
