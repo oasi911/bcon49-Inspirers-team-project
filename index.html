@@ -22,7 +22,7 @@
 
     
     <script type="module" crossorigin src="/bcon49-Inspirers-team-project/assets/index-a85b38c4.js"></script>
-    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-a0d6f09f.css">
+    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-275fca48.css">
   </head>
   <body>
     <header>
@@ -480,8 +480,140 @@
 ></script>
 <script defer src="../js/mobile-menu.js"></script>
 
-    
-    
+    <button type="button" data-modal-open>Now shop</button>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-contact">
+    <!-- !BUTTON CLOSE -->
+
+    <button
+      class="modal-btn-close--contact"
+      type="button"
+      aria-label="close window"
+      data-modal-close
+    >
+      <svg class="modal-contact__icon-close">
+        <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#close"></use>
+      </svg>
+    </button>
+
+    <!-- !TITLE+PARAGRAPH -->
+
+    <h2 class="modal-contact__title">Contact us</h2>
+    <p class="modal-contact__text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+
+    <!-- !FORM -->
+    <form name="modal-form" class="modal-contact__form">
+      <!-- <div class="modal-contact__form-wrapper"> -->
+      <label class="modal-contact__input-title" for="user-name"> Name</label>
+      <input
+        class="modal-contact__input-field"
+        type="text"
+        name="user_name"
+        id="user-name"
+        minlength="2"
+        required
+        placeholder="Your name"
+        pattern="[A-Za-z]"
+      />
+
+      <label class="modal-contact__input-title" for="user-email"> Email</label>
+      <input
+        class="modal-contact__input-field modal-contact__input-field--bottom"
+        type="email"
+        name="user_email"
+        id="user-email"
+        minlength="11"
+        required
+        placeholder="Your email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+      />
+      <!-- </div> -->
+
+      <!-- !BUTTON CLOSE/OPEN THANK-YOU -->
+      <button
+        class="btn-contact-submit"
+        type="submit"
+        data-modal-close
+        data-modal-open-received
+        aria-expanded="false"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+    <button type="button" data-modal-open>Thank you</button>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-received">
+    <!-- !BUTTON CLOSE -->
+
+    <button
+      class="modal-btn-close--received"
+      type="button"
+      aria-label="close window"
+      data-modal-close
+    >
+      <svg class="modal-received__icon-close">
+        <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#close"></use>
+      </svg>
+    </button>
+
+    <!-- !IMG-FLOWERS -->
+
+    <picture>
+      <!-- *Desktop -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/modal-received/desktop/destop__received-img@1x.png 1x,
+          ./images/modal-received/desktop/destop__received-img@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- *Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="/bcon49-Inspirers-team-project/assets/tablet__received-img@1x-9d789e4b.png 1x, /bcon49-Inspirers-team-project/assets/tablet__received-img@2x-90a9ebc0.png 2x"
+        type="image/png"
+      />
+      <!-- *Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="/bcon49-Inspirers-team-project/assets/mobile__received-img@1x-8ccbbfd9.png 1x, /bcon49-Inspirers-team-project/assets/mobile__received-img@2x-d9af1d23.png 2x"
+        type="image/png"
+      />
+      <img
+        class="modal-received__img"
+        src="/bcon49-Inspirers-team-project/assets/mobile__received-img@1x-8ccbbfd9.png"
+        alt="Flowers"
+        width="100%"
+      />
+    </picture>
+
+    <!-- !TITLE+TEXT -->
+    <h3 class="modal-received__title">Thank you!</h3>
+    <p class="modal-received__text">
+      We have received your contact details and will reach you soon.
+    </p>
+
+    <!-- !BUTTON-CONTINUE/CLOSE -->
+    <button
+      class="btn-received-continue"
+      aria-label="continue and close window"
+      data-modal-close
+    >
+      Continue
+    </button>
+  </div>
+</div>
+
     <div class="backdrop is-hidden" data-modal>
   <div class="modal__subscribe">
     <div class="modal__subscribe__btn" data-modal-close>
