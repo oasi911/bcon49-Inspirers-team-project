@@ -1,6 +1,6 @@
         // !BACKDROP
 
-.backdrop {
+        .backdrop {
             opacity: 1;
             position: fixed;
             top: 0;
@@ -16,20 +16,20 @@
             z-index: 10;
         }
 
-.backdrop.is-hidden {
+        .backdrop.is-hidden {
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
         }
 
- .backdrop.is-hidden .modal-contact {
+        .backdrop.is-hidden .modal-contact {
             opacity: 0;
             transform: translate(-30%, -70%);
         }
 
         // !MODAL-FORM
 
-.modal-contact {
+        .modal-contact {
             position: fixed;
             top: 50%;
             left: 50%;
@@ -48,29 +48,12 @@
                 padding: 48px 32px;
             }
 
+            z-index: 2;
             // outline: 2px solid red;
         }
 
-.modal-contact__icon-close {
-            stroke: $black;
-            height: 18px;
-            width: 18px;
 
-            @media screen and (min-width: 768px) {
-                height: 24px;
-                width: 24px;
-            }
-
-            transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            &:hover,
-            &:focus {
-                stroke: $button-color-default;
-            }
-
-        }
-
-.modal-btn-close--contact {
+        .btn-modal-contact-close {
             position: absolute;
             top: 16px;
             left: 238px;
@@ -93,7 +76,26 @@
             }
         }
 
-.modal-contact__title {
+        .icon-modal-contact-close {
+            stroke: $black;
+            height: 18px;
+            width: 18px;
+
+            @media screen and (min-width: 768px) {
+                height: 24px;
+                width: 24px;
+            }
+
+            transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                stroke: $button-color-default;
+            }
+
+        }
+
+        .modal-contact__title {
             display: block;
 
             font-family: "Montserrat";
@@ -111,7 +113,7 @@
             }
         }
 
-.modal-contact__text {
+        .modal-contact__text {
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: 12px;
@@ -128,7 +130,7 @@
 
 
 
-.modal-contact__input-title {
+        .modal-contact__input-title {
             font-family: 'Montserrat';
             font-weight: 500;
             display: block;
@@ -144,7 +146,7 @@
 
 
 
-.modal-contact__input-field {
+        .modal-contact__input-field {
             width: 100%;
             height: 35px;
             padding: 10px 12px;
@@ -154,15 +156,16 @@
             font-weight: 500;
             font-size: 10px;
             line-height: calc(12 / 10);
-
+            background-color: $white;
+            outline: transparent;
 
             border: 1px solid #D7D7D7;
             border-radius: 4px;
-            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover,
             &:focus {
-                border: $button-color-hover;
+                border-color: rgba(232, 111, 84, 0.4);
             }
 
             @media screen and (min-width: 768px) {
@@ -177,6 +180,7 @@
                 font-size: 10px;
                 line-height: calc(12 / 10);
                 color: rgba(0, 0, 0, 0.4);
+                border-color: rgba(232, 111, 84, 0.4);
 
                 @media screen and (min-width: 768px) {
                     font-size: 14px;
@@ -186,15 +190,33 @@
 
         }
 
-.modal-contact__input-field:invalid:not(:placeholder-shown) {
-    border-color: red;
-    }
 
-.modal-contact__input-field--bottom {
+        // .modal-contact__input-field:hover~.modal-contact__input-title,
+        // .modal-contact__input-field:focus-within~.modal-contact__input-title {
+        //      color: rgba(232, 111, 84, 0.4);}
+
+
+
+        .modal-contact__input-field:invalid:not(:placeholder-shown) {
+            border-color: red;
+        }
+
+        .modal-contact__input-field:valid:not(:placeholder-shown)~.modal-contact__input-field:valid:not(:placeholder-shown)~.btn-modal-contact-submit {
+            pointer-events: all;
+            background-color: $button-color-default;
+
+            // &:hover,
+            // &:focus {
+            //     background-color: $button-color-hover;
+            // }
+        }
+
+
+        .modal-contact__input-field--bottom {
             margin-bottom: 0;
         }
 
-.btn-contact-submit {
+        .btn-modal-contact-submit {
             outline: 0;
             border: 0;
             margin: 0;
@@ -215,17 +237,17 @@
             line-height: calc(17/14);
             color: $white;
 
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            //     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            &:hover {
-                background-color: $button-color-hover;
-            }
+            // &:hover {
+            //     background-color: $button-color-hover;
+            // }
 
-            &:focus {
-                background-color: $button-color-focus;
-                box-shadow: $button-color-focus-box-shadow;
-            }
+            // &:focus {
+            //     background-color: $button-color-focus;
+            //     box-shadow: $button-color-focus-box-shadow;
+            // }
 
             @media screen and (min-width: 768px) {
                 margin-top: 38px;

@@ -3,12 +3,12 @@
     <!-- !BUTTON CLOSE -->
 
     <button
-      class="modal-btn-close--contact"
+      class="btn-modal-contact-close"
       type="button"
       aria-label="close window"
-      data-modal-close
+      data-modal-close-open
     >
-      <svg class="modal-contact__icon-close">
+      <svg class="icon-modal-contact-close">
         <use href="./images/symbol-defs.svg#close"></use>
       </svg>
     </button>
@@ -32,9 +32,9 @@
         name="user_name"
         id="user-name"
         minlength="2"
-        required
         placeholder="Your name"
-        pattern="[A-Za-z]"
+        required
+        pattern="[a-Z]"
       />
 
       <label class="modal-contact__input-title" for="user-email"> Email</label>
@@ -44,17 +44,17 @@
         name="user_email"
         id="user-email"
         minlength="11"
-        required
         placeholder="Your email"
         pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        required
       />
       <!-- </div> -->
 
       <!-- !BUTTON CLOSE/OPEN THANK-YOU -->
       <button
-        class="btn-contact-submit"
+        class="btn-modal-contact-submit"
         type="submit"
-        data-modal-close
+        data-modal-open-close
         data-modal-open-received
         aria-expanded="false"
       >

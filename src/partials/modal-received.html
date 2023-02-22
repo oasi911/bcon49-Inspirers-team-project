@@ -1,14 +1,14 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-received>
   <div class="modal-received">
     <!-- !BUTTON CLOSE -->
 
     <button
-      class="modal-btn-close--received"
+      class="btn-modal-received-close"
       type="button"
       aria-label="close window"
-      data-modal-close
+      data-modal-close-received
     >
-      <svg class="modal-received__icon-close">
+      <svg class="icon-modal-received-close">
         <use href="./images/symbol-defs.svg#close"></use>
       </svg>
     </button>
@@ -20,8 +20,8 @@
       <source
         media="(min-width: 1280px)"
         srcset="
-          ./images/modal-received/desktop/destop__received-img@1x.png 1x,
-          ./images/modal-received/desktop/destop__received-img@2x.png 2x
+          ./images/modal-received/desktop/desktop__received-img@1x.png 1x,
+          ./images/modal-received/desktop/desktop__received-img@2x.png 2x
         "
         type="image/png"
       />
@@ -45,7 +45,7 @@
       />
       <img
         class="modal-received__img"
-        src="./images/modal-received/mobile/mobile__received-img@1x.png"
+        src="./images/modal-received/mobile/mobile__received-img@1x.png 1x"
         alt="Flowers"
         width="100%"
       />
@@ -59,9 +59,9 @@
 
     <!-- !BUTTON-CONTINUE/CLOSE -->
     <button
-      class="btn-received-continue"
+      class="btn-modal-received-continue"
       aria-label="continue and close window"
-      data-modal-close
+      data-modal-close-open-received
     >
       Continue
     </button>
