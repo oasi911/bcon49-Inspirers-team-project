@@ -952,6 +952,7 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 28px 16px;
   width: 272px;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .modal-contact {
@@ -960,23 +961,7 @@ button {
   }
 }
 
-.modal-contact__icon-close {
-  stroke: #000000;
-  height: 18px;
-  width: 18px;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .modal-contact__icon-close {
-    height: 24px;
-    width: 24px;
-  }
-}
-.modal-contact__icon-close:hover, .modal-contact__icon-close:focus {
-  stroke: #e86f54;
-}
-
-.modal-btn-close--contact {
+.btn-modal-contact-close {
   position: absolute;
   top: 16px;
   left: 238px;
@@ -990,10 +975,26 @@ button {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .modal-btn-close--contact {
+  .btn-modal-contact-close {
     top: 24px;
     left: 432px;
   }
+}
+
+.icon-modal-contact-close {
+  stroke: #000000;
+  height: 18px;
+  width: 18px;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .icon-modal-contact-close {
+    height: 24px;
+    width: 24px;
+  }
+}
+.icon-modal-contact-close:hover, .icon-modal-contact-close:focus {
+  stroke: #e86f54;
 }
 
 .modal-contact__title {
@@ -1052,12 +1053,14 @@ button {
   font-weight: 500;
   font-size: 10px;
   line-height: 1.2;
+  background-color: #ffffff;
+  outline: transparent;
   border: 1px solid #D7D7D7;
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-contact__input-field:hover, .modal-contact__input-field:focus {
-  border: #e25b41;
+  border-color: rgba(232, 111, 84, 0.4);
 }
 @media screen and (min-width: 768px) {
   .modal-contact__input-field {
@@ -1072,6 +1075,7 @@ button {
   font-size: 10px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(232, 111, 84, 0.4);
 }
 .modal-contact__input-field::placeholder {
   font-family: "Montserrat";
@@ -1079,6 +1083,7 @@ button {
   font-size: 10px;
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(232, 111, 84, 0.4);
 }
 @media screen and (min-width: 768px) {
   .modal-contact__input-field::-moz-placeholder {
@@ -1099,11 +1104,21 @@ button {
   border-color: red;
 }
 
+.modal-contact__input-field:valid:not(:-moz-placeholder-shown) ~ .modal-contact__input-field:valid:not(:-moz-placeholder-shown) ~ .btn-modal-contact-submit {
+  pointer-events: all;
+  background-color: #e86f54;
+}
+
+.modal-contact__input-field:valid:not(:placeholder-shown) ~ .modal-contact__input-field:valid:not(:placeholder-shown) ~ .btn-modal-contact-submit {
+  pointer-events: all;
+  background-color: #e86f54;
+}
+
 .modal-contact__input-field--bottom {
   margin-bottom: 0;
 }
 
-.btn-contact-submit {
+.btn-modal-contact-submit {
   outline: 0;
   border: 0;
   margin: 0;
@@ -1120,17 +1135,9 @@ button {
   font-size: 14px;
   line-height: 1.2142857143;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-contact-submit:hover {
-  background-color: #e25b41;
-}
-.btn-contact-submit:focus {
-  background-color: #fa6f54;
-  box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
 }
 @media screen and (min-width: 768px) {
-  .btn-contact-submit {
+  .btn-modal-contact-submit {
     margin-top: 38px;
     height: 50px;
     font-size: 18px;
@@ -1138,37 +1145,38 @@ button {
   }
 }
 
-.modal-reveived {
+.modal-received {
   position: relative;
   width: 272px;
   margin: 0 auto;
   padding: 44px 16px 32px 16px;
   background-color: #ffffff;
+  z-index: 5;
 }
 @media screen and (min-width: 768px) {
-  .modal-reveived {
+  .modal-received {
     width: 480px;
     padding: 54px 32px 54px 32px;
   }
 }
 
-.modal-received__icon-close {
+.icon-modal-received-close {
   stroke: #000000;
-  height: 12px;
-  width: 12px;
+  height: 18px;
+  width: 18px;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
-  .modal-received__icon-close {
-    height: 16px;
-    width: 16px;
+  .icon-modal-received-close {
+    height: 24px;
+    width: 24px;
   }
 }
-.modal-received__icon-close:hover, .modal-received__icon-close:focus {
+.icon-modal-received-close:hover, .icon-modal-received-close:focus {
   stroke: #e86f54;
 }
 
-.modal-btn-close--received {
+.btn-modal-received-close {
   position: absolute;
   top: 16px;
   left: 238px;
@@ -1182,7 +1190,7 @@ button {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .modal-btn-close--received {
+  .btn-modal-received-close {
     top: 24px;
     left: 432px;
   }
@@ -1192,12 +1200,6 @@ button {
   display: block;
   margin: 0 auto;
   margin-bottom: 16px;
-  width: 188px;
-}
-@media screen and (min-width: 768px) {
-  .modal-received__img {
-    width: 266px;
-  }
 }
 
 .modal-received__title {
@@ -1235,7 +1237,7 @@ button {
   }
 }
 
-.btn-received-continue {
+.btn-modal-received-continue {
   display: block;
   padding: 10px 86px;
   margin: 0 auto;
@@ -1250,15 +1252,15 @@ button {
   border-radius: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-received-continue:hover {
+.btn-modal-received-continue:hover {
   background-color: #e25b41;
 }
-.btn-received-continue:focus {
+.btn-modal-received-continue:focus {
   background-color: #fa6f54;
   box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
 }
 @media screen and (min-width: 768px) {
-  .btn-received-continue {
+  .btn-modal-received-continue {
     font-size: 18px;
     line-height: 1.2222222222;
     padding: 14px 165px;

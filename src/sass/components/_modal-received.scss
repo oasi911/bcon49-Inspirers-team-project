@@ -1,10 +1,10 @@
-.modal-reveived {
+.modal-received {
     position: relative;
     width: 272px;
     margin: 0 auto;
     padding: 44px 16px 32px 16px;
     background-color: $white;
-
+    z-index: 5;
     // outline: 2px solid red;
 
 
@@ -14,14 +14,14 @@
     }
 }
 
-.modal-received__icon-close {
+.icon-modal-received-close {
     stroke: $black;
-    height: 12px;
-    width: 12px;
+    height: 18px;
+    width: 18px;
 
     @media screen and (min-width: 768px) {
-        height: 16px;
-        width: 16px;
+        height: 24px;
+        width: 24px;
     }
 
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,7 +33,7 @@
 
 }
 
-.modal-btn-close--received {
+.btn-modal-received-close {
     position: absolute;
     top: 16px;
     left: 238px;
@@ -53,6 +53,7 @@
     @media screen and (min-width: 768px) {
         top: 24px;
         left: 432px;
+
     }
 }
 
@@ -61,11 +62,11 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 16px;
-    width: 188px;
 
-    @media screen and (min-width: 768px) {
-        width: 266px;
-    }
+
+    // @media screen and (min-width: 768px) {
+    //     width: 266px;
+    // }
 
 }
 
@@ -105,7 +106,7 @@
 }
 
 
-.btn-received-continue {
+.btn-modal-received-continue {
     display: block;
     padding: 10px 86px;
     margin: 0 auto;
