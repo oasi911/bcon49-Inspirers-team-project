@@ -126,13 +126,14 @@
 .footer-nav__item:not(:last-child) {
   margin-bottom: 12px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-nav__item:hover,
-.footer-nav__item:focus {
+.footer-nav__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus {
   color: $button-color-focus;
 }
 
@@ -150,30 +151,26 @@
   color: $button-color-focus;
 }
 
+
+.footer-socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: $button-color-hover;
+}
+
+.footer-socials__link:hover > .footer-socials__icon ,
+.footer-socials__link:focus > .footer-socials__icon {
+  stroke: currentColor;
+}
+
 .footer-socials__icon {
+  stroke: $white;
   transition-property: stroke;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  stroke: $main-background-color;
-}
-.footer-socials__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.footer-socials__link {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
-.footer-socials__icon:hover,
-.footer-socials__icon:focus {
-  stroke: $button-color-focus;
-}
-.footer-socials__icon {
-  fill: currentColor;
-}
 .wrap--mail {
   display: block;
 
