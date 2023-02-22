@@ -1,0 +1,142 @@
+.modal-reveived {
+    position: relative;
+    width: 272px;
+    margin: 0 auto;
+    padding: 44px 16px 32px 16px;
+    background-color: $white;
+
+    // outline: 2px solid red;
+
+
+    @media screen and (min-width: 768px) {
+        width: 480px;
+        padding: 54px 32px 54px 32px;
+    }
+}
+
+.modal-received__icon-close {
+    stroke: $black;
+    height: 12px;
+    width: 12px;
+
+    @media screen and (min-width: 768px) {
+        height: 16px;
+        width: 16px;
+    }
+
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        stroke: $mobile-modal-menu-bg;
+    }
+
+}
+
+.modal-btn-close--received {
+    position: absolute;
+    top: 16px;
+    left: 238px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: 0;
+
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+
+    @media screen and (min-width: 768px) {
+        top: 24px;
+        left: 432px;
+    }
+}
+
+
+.modal-received__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    width: 188px;
+
+    @media screen and (min-width: 768px) {
+        width: 266px;
+    }
+
+}
+
+.modal-received__title {
+    display: block;
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24/20);
+    color: $black;
+    text-align: center;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+        line-height: calc(39 / 32);
+        margin-bottom: 16px;
+    }
+}
+
+.modal-received__text {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-align: center;
+    color: $form-text-color;
+
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        margin-bottom: 34px;
+    }
+}
+
+
+.btn-received-continue {
+    display: block;
+    padding: 10px 86px;
+    margin: 0 auto;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: center;
+
+    color: $white;
+    background-color: $button-color-default;
+
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $button-color-hover;
+    }
+
+    &:focus {
+        background-color: $button-color-focus;
+        box-shadow: $button-color-focus-box-shadow;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        padding: 14px 165px;
+    }
+}
