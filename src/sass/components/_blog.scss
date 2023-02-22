@@ -1,3 +1,7 @@
+.blog {
+  overflow: hidden;
+}
+
 .blog__title {
   display: flex;
   align-items: center;
@@ -192,7 +196,7 @@
 
 .swiper-button-next {
   @media screen and (min-width: 768px) {
-    margin-right: 38px;
+    margin-right: 10%;
     margin-left: auto;
   }
 
@@ -204,7 +208,7 @@
 
 .swiper-button-prev {
   @media screen and (min-width: 768px) {
-    margin-left: 38px;
+    margin-left: 10%;
     margin-right: auto;
   }
 
