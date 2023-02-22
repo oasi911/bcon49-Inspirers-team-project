@@ -1,0 +1,71 @@
+<button type="button" data-modal-open>Thank you</button>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-received">
+    <!-- !BUTTON CLOSE -->
+
+    <button
+      class="modal-btn-close--received"
+      type="button"
+      aria-label="close window"
+      data-modal-close
+    >
+      <svg class="modal-received__icon-close">
+        <use href="./images/symbol-defs.svg#close"></use>
+      </svg>
+    </button>
+
+    <!-- !IMG-FLOWERS -->
+
+    <picture>
+      <!-- *Desktop -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/modal-received/desktop/destop__received-img@1x.png 1x,
+          ./images/modal-received/desktop/destop__received-img@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- *Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/modal-received/tablet/tablet__received-img@1x.png 1x,
+          ./images/modal-received/tablet/tablet__received-img@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- *Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/modal-received/mobile/mobile__received-img@1x.png 1x,
+          ./images/modal-received/mobile/mobile__received-img@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="modal-received__img"
+        src="./images/modal-received/mobile/mobile__received-img@1x.png"
+        alt="Flowers"
+        width="100%"
+      />
+    </picture>
+
+    <!-- !TITLE+TEXT -->
+    <h3 class="modal-received__title">Thank you!</h3>
+    <p class="modal-received__text">
+      We have received your contact details and will reach you soon.
+    </p>
+
+    <!-- !BUTTON-CONTINUE/CLOSE -->
+    <button
+      class="btn-received-continue"
+      aria-label="continue and close window"
+      data-modal-close
+    >
+      Continue
+    </button>
+  </div>
+</div>
