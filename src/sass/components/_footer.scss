@@ -127,8 +127,18 @@
   margin-bottom: 12px;
 }
 
+.footer-nav__item:hover,
+.footer-nav__item:focus {
+  color: $button-color-focus;
+}
+
 .address__item:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $button-color-focus;
 }
 
 .footer-socials__icon {
