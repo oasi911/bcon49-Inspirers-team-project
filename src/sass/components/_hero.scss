@@ -1,16 +1,29 @@
+/**
+  |============================
+  | Keyframes
+  |============================
+*/
+@keyframes hero-appearence {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hero {
-  // !phone screen
-  // padding-top: 44px;
-
-  // // !tablet screen
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 38px;
-  // }
-
-  // // !desktop screen
-  // @media screen and (min-width: 1280px) {
-  //   padding-top: 68px;
-  // }
+  position: relative;
+  overflow: hidden;
 }
 
 .hero > .container {
@@ -26,6 +39,9 @@
   // !desktop screen
   @media screen and (min-width: 1280px) {
     height: 729px;
+    will-change: transform;
+    animation: hero-slide ease 2300ms, hero-appearence 6500ms forwards;
+    opacity: 0;
   }
 }
 
@@ -52,7 +68,7 @@
 
   // !desktop screen
   @media screen and (min-width: 1280px) {
-    bottom: -6%;
+    bottom: -5%;
     font-size: 160px;
     line-height: calc(195 / 160);
 
@@ -134,10 +150,12 @@
 
     &:hover > .hero__icon-border,
     &:focus > .hero__icon-border {
+      fill: #6f6866;
       transform: translate(-50%, -50%) scale(1.2);
     }
     &:hover > .hero__icon-arrow,
     &:focus > .hero__icon-arrow {
+      fill: #6f6866;
       transform: translate(-50%, -50%) rotate(127deg);
     }
   }
@@ -162,7 +180,7 @@
     @media screen and (min-width: 1280px) {
       width: 166px;
       height: 166px;
-      transition: transform 600ms linear;
+      transition: transform 600ms linear, fill 600ms linear;
     }
   }
 
@@ -185,7 +203,7 @@
     @media screen and (min-width: 1280px) {
       width: 58px;
       height: 99px;
-      transition: transform 550ms linear;
+      transition: transform 550ms linear, fill 600ms linear;
     }
   }
 }
