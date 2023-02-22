@@ -28,7 +28,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     width: 860px;
-    height: 100%;
+    height: 528px;
   }
 }
 .modal__subscribe__btn {
@@ -44,7 +44,10 @@
     right: 24px;
   }
 }
-
+.modal__button__close{
+  background-color: transparent;
+  border: none;
+}
 .modal__subscribe__close {
   stroke: $black;
   height: 18px;
