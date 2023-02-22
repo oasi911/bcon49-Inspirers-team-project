@@ -21,8 +21,8 @@
     />
 
     
-    <script type="module" crossorigin src="/bcon49-Inspirers-team-project/assets/index-a85b38c4.js"></script>
-    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-d97f5c66.css">
+    <script type="module" crossorigin src="/bcon49-Inspirers-team-project/assets/index-0d0c725d.js"></script>
+    <link rel="stylesheet" href="/bcon49-Inspirers-team-project/assets/index-7e492a5b.css">
   </head>
   <body>
     <header>
@@ -74,37 +74,37 @@
     </header>
     <main>
       <section class="hero" id="Anemone">
-    <div class="container">
-      <h1 class="hero__title">Anemone</h1>
-      <h2 class="hero__subtitle">Flower studio</h2>
-      <picture class="hero__image">
-        <source
-          media="(min-width: 1280px)"
-          srcset="/bcon49-Inspirers-team-project/assets/desktop__hero-bg@1x-70fa9ad9.png 1x, /bcon49-Inspirers-team-project/assets/desktop__hero-bg@2x-be2efcb1.png 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/bcon49-Inspirers-team-project/assets/tablet__hero-img@1x-25129d61.png 1x, /bcon49-Inspirers-team-project/assets/tablet__hero-img@2x-12c692de.png 2x"
-        />
-        <source
-          media="(max-width: 767.98px)"
-          srcset="/bcon49-Inspirers-team-project/assets/mobile__hero-img@1x-2a8ea822.png 1x, /bcon49-Inspirers-team-project/assets/mobile__hero-img@2x-40370eeb.png 2x"
-        />
-        <img
-          class="hero__img"
-          src="/bcon49-Inspirers-team-project/assets/mobile__hero-img@1x-2a8ea822.png"
-          alt="anemone flower"
-        />
-      </picture>
-      <button class="hero__btn">
-        <svg class="hero__icon-border">
-          <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#btn-border"></use>
-        </svg>
-        <svg class="hero__icon-arrow">
-          <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#btn-arrow"></use>
-        </svg>
-      </button>
-    </div>
+  <div class="container">
+    <h1 class="hero__title">Anemone</h1>
+    <h2 class="hero__subtitle">Flower studio</h2>
+    <picture class="hero__image">
+      <source
+        media="(min-width: 1280px)"
+        srcset="/bcon49-Inspirers-team-project/assets/desktop__hero-bg@1x-70fa9ad9.png 1x, /bcon49-Inspirers-team-project/assets/desktop__hero-bg@2x-be2efcb1.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/bcon49-Inspirers-team-project/assets/tablet__hero-img@1x-25129d61.png 1x, /bcon49-Inspirers-team-project/assets/tablet__hero-img@2x-12c692de.png 2x"
+      />
+      <source
+        media="(max-width: 767.98px)"
+        srcset="/bcon49-Inspirers-team-project/assets/mobile__hero-img@1x-2a8ea822.png 1x, /bcon49-Inspirers-team-project/assets/mobile__hero-img@2x-40370eeb.png 2x"
+      />
+      <img
+        class="hero__img"
+        src="/bcon49-Inspirers-team-project/assets/mobile__hero-img@1x-2a8ea822.png"
+        alt="anemone flower"
+      />
+    </picture>
+    <button class="hero__btn" data-modal-open-hero>
+      <svg class="hero__icon-border">
+        <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#btn-border"></use>
+      </svg>
+      <svg class="hero__icon-arrow">
+        <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </section>
 
       <section class="about" id="About">
@@ -225,7 +225,9 @@
           <p class="store__price">from &#36;60</p>
         </li>
       </ul>
-      <button type="button" class="store__button">Order flowers</button>
+      <button type="button" class="store__button" data-modal-open-store>
+        Order flowers
+      </button>
     </div>
   </div>
 </section>
@@ -485,12 +487,12 @@
     <!-- !BUTTON CLOSE -->
 
     <button
-      class="modal-btn-close--contact"
+      class="btn-modal-contact-close"
       type="button"
       aria-label="close window"
-      data-modal-close
+      data-modal-close-open
     >
-      <svg class="modal-contact__icon-close">
+      <svg class="icon-modal-contact-close">
         <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#close"></use>
       </svg>
     </button>
@@ -514,9 +516,9 @@
         name="user_name"
         id="user-name"
         minlength="2"
-        required
         placeholder="Your name"
-        pattern="[A-Za-z]"
+        required
+        pattern="[a-Z]"
       />
 
       <label class="modal-contact__input-title" for="user-email"> Email</label>
@@ -526,17 +528,17 @@
         name="user_email"
         id="user-email"
         minlength="11"
-        required
         placeholder="Your email"
         pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        required
       />
       <!-- </div> -->
 
       <!-- !BUTTON CLOSE/OPEN THANK-YOU -->
       <button
-        class="btn-contact-submit"
+        class="btn-modal-contact-submit"
         type="submit"
-        data-modal-close
+        data-modal-open-close
         data-modal-open-received
         aria-expanded="false"
       >
@@ -546,17 +548,17 @@
   </div>
 </div>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-received>
   <div class="modal-received">
     <!-- !BUTTON CLOSE -->
 
     <button
-      class="modal-btn-close--received"
+      class="btn-modal-received-close"
       type="button"
       aria-label="close window"
-      data-modal-close
+      data-modal-close-received
     >
-      <svg class="modal-received__icon-close">
+      <svg class="icon-modal-received-close">
         <use href="/bcon49-Inspirers-team-project/assets/symbol-defs-fd0e8bf5.svg#close"></use>
       </svg>
     </button>
@@ -567,16 +569,13 @@
       <!-- *Desktop -->
       <source
         media="(min-width: 1280px)"
-        srcset="
-          ./images/modal-received/desktop/destop__received-img@1x.png 1x,
-          ./images/modal-received/desktop/destop__received-img@2x.png 2x
-        "
+        srcset="/bcon49-Inspirers-team-project/assets/desktop__received-img@1x-9d789e4b.png 1x, /bcon49-Inspirers-team-project/assets/desktop__received-img@2x-90a9ebc0.png 2x"
         type="image/png"
       />
       <!-- *Tablet screen -->
       <source
         media="(min-width: 768px)"
-        srcset="/bcon49-Inspirers-team-project/assets/tablet__received-img@1x-9d789e4b.png 1x, /bcon49-Inspirers-team-project/assets/tablet__received-img@2x-90a9ebc0.png 2x"
+        srcset="/bcon49-Inspirers-team-project/assets/desktop__received-img@1x-9d789e4b.png 1x, /bcon49-Inspirers-team-project/assets/desktop__received-img@2x-90a9ebc0.png 2x"
         type="image/png"
       />
       <!-- *Mobile screen -->
@@ -587,7 +586,7 @@
       />
       <img
         class="modal-received__img"
-        src="/bcon49-Inspirers-team-project/assets/mobile__received-img@1x-8ccbbfd9.png"
+        src="./images/modal-received/mobile/mobile__received-img@1x.png 1x"
         alt="Flowers"
         width="100%"
       />
@@ -601,9 +600,9 @@
 
     <!-- !BUTTON-CONTINUE/CLOSE -->
     <button
-      class="btn-received-continue"
+      class="btn-modal-received-continue"
       aria-label="continue and close window"
-      data-modal-close
+      data-modal-close-open-received
     >
       Continue
     </button>
@@ -662,6 +661,8 @@
 </div>
 
 
+    
+    
     
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
