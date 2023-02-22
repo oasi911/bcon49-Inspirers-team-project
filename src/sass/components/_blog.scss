@@ -90,10 +90,10 @@
 
 .swiper {
   width: 413px;
-  flex-shrink: 0;
 
   @media screen and (min-width: 768px) {
     width: 982px;
+    flex-shrink: 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -115,7 +115,7 @@
   padding-right: 8px;
 
   @media screen and (min-width: 768px) {
-    min-width: 344px;
+    min-width: 374px;
     height: 398px;
     padding-left: 32px;
     padding-right: 32px;
@@ -192,7 +192,7 @@
 
 .swiper-button-next {
   @media screen and (min-width: 768px) {
-    margin-right: 34px;
+    margin-right: 38px;
     margin-left: auto;
   }
 
@@ -204,7 +204,7 @@
 
 .swiper-button-prev {
   @media screen and (min-width: 768px) {
-    margin-left: 34px;
+    margin-left: 38px;
     margin-right: auto;
   }
 
