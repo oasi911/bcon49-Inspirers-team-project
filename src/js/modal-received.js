@@ -26,8 +26,6 @@
   }
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
